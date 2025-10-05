@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Code Explainer</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .form-section {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        textarea {
+            width: 100%;
+            height: 200px;
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            resize: vertical;
+            background: white;
+        }
+        textarea:focus {
+            outline: none;
+            border-color: #3498db;
+        }
+        button {
+            background: #3498db;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        button:hover {
+            background: #2980b9;
+        }
+        .explanation {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 25px;
+            border-left: 5px solid #e74c3c;
+            white-space: pre-line;
+            font-size: 14px;
+            line-height: 1.7;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+             
+        .explanation strong {
+            color: #2c3e50;
+        }
+
+        
+        .explanation {
+            background-image: 
+                linear-gradient(90deg, transparent 0%, #3498db 50%, transparent 100%);
+            background-size: 100% 1px;
+            background-repeat: no-repeat;
+            background-position: 0 0, 0 100%;
+        }
+        .example-section {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 20px 0;
+            border-left: 4px solid #ffc107;
+        }
+        .code-block {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 6px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            margin: 10px 0;
+            overflow-x: auto;
+            line-height: 1.5;
+        }
+        .feature {
+            background: #e8f4fd;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 5px 0;
+            border-left: 3px solid #3498db;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🤖 AI Python Code Explainer</h1>
+        
+        <div style="margin-bottom: 20px;">
+            <div class="feature">
+                <strong>🔍 Line-by-Line Analysis</strong> - Detailed explanations for each code line
+            </div>
+            <div class="feature">
+                <strong>🚀 Flask Specialist</strong> - Optimized for web framework code
+            </div>
+            <div class="feature">
+                <strong>🎯 Beginner Friendly</strong> - Simple explanations for all skill levels
+            </div>
+        </div>
+        
+        <div class="form-section">
+            <form method="POST">
+                <label><strong>📝 Paste your Python code here:</strong></label>
+                <textarea name="code" placeholder="# Example: Flask application&#10;@app.route(&quot;/&quot;, methods=[&quot;GET&quot;, &quot;POST&quot;])&#10;def index():&#10;    code = &quot;&quot;&#10;    explanation = &quot;&quot;&#10;    &#10;    if request.method == &quot;POST&quot;:&#10;        code = request.form.get(&quot;code&quot;, &quot;&quot;)&#10;        if code:&#10;            explanation = explain_code(code)&#10;    &#10;    return render_template(&quot;index.html&quot;, code=code, explanation=explanation)&#10;&#10;if __name__ == &quot;__main__&quot;:&#10;    app.run(debug=True)">{{ code }}</textarea>
+                <br>
+                <button type="submit">🚀 Analyze Code</button>
+            </form>
+        </div>
+        
+        {% if explanation %}
+        <div class="explanation">
+            {{ explanation }}
+        </div>
+        {% endif %}
+        
+        <div class="example-section">
+            <strong>💡 Try this example (copy and paste):</strong>
+            <div class="code-block">
+@app.route("/", methods=["GET", "POST"])
+def index():
+    code = ""
+    explanation = ""
+    
+    if request.method == "POST":
+        code = request.form.get("code", "")
+        if code:
+            explanation = explain_code(code)
+    
+    return render_template("index.html", code=code, explanation=explanation)
+
+if __name__ == "__main__":
+    app.run(debug=True)
+            </div>
+        </div>
+    </div>
+</body>
+</html>
