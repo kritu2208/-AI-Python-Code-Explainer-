@@ -40,13 +40,16 @@ python app.py
 
 
 ## 🏗️ How It Works
-###Code Analysis Engine
+
+### Code Analysis Engine
+
 The application uses a multi-layered approach:
 -Pattern Matching: Identifies common Python and Flask patterns
 -Rule-Based Analysis: Provides structured explanations for code constructs
 -AI Enhancement: Leverages transformer models for nuanced understanding
 
-###Key Components
+### Key Components
+
 -explain_code(): Core analysis function with line-by-line processing
 -Pattern Recognition: Detects Flask routes, function definitions, conditionals
 -Educational Formatting: Presents explanations in beginner-friendly format
