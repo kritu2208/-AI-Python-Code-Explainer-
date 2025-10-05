@@ -27,7 +27,7 @@ A Flask-based web application that provides detailed, line-by-line explanations 
 
 1. **Clone the repository**
 bash
-git clone https://github.com/yourusername/ai-code-explainer.git
+git clone (https://github.com/kritu2208/-AI-Python-Code-Explainer-).git
 cd ai-code-explainer
 2. **Create virtual environment**
 python -m venv venv
