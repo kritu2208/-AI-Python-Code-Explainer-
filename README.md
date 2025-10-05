@@ -1,4 +1,3 @@
-# -AI-Python-Code-Explainer-
 # 🤖 AI Python Code Explainer
 
 A Flask-based web application that provides detailed, line-by-line explanations of Python code using AI-powered analysis. Perfect for beginners learning Python or developers understanding new codebases.
@@ -18,6 +17,36 @@ A Flask-based web application that provides detailed, line-by-line explanations 
 - ⚡ **Real-time Analysis**: Instant code explanations with comprehensive breakdowns
 
 
-```bash
+## 🚀 Quick Start
+
+### Prerequisites
+- Python 3.8 or higher
+- pip (Python package manager)
+
+### Installation
+
+1. **Clone the repository**
+bash
 git clone https://github.com/yourusername/ai-code-explainer.git
 cd ai-code-explainer
+2. **Create virtual environment**
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+3. **Install dependencies**
+pip install -r requirements.txt
+4. **Run the application**
+python app.py
+5. Open your browser and navigate to **http://localhost:5000**
+
+
+## 🏗️ How It Works
+###Code Analysis Engine
+The application uses a multi-layered approach:
+-Pattern Matching: Identifies common Python and Flask patterns
+-Rule-Based Analysis: Provides structured explanations for code constructs
+-AI Enhancement: Leverages transformer models for nuanced understanding
+
+###Key Components
+-explain_code(): Core analysis function with line-by-line processing
+-Pattern Recognition: Detects Flask routes, function definitions, conditionals
+-Educational Formatting: Presents explanations in beginner-friendly format
